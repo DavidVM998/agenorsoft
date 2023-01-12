@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: 'Gotham';
+}
+
+/*header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #194E84;
+    color: #fff;
+    padding: 0 50px;
+    height: 80px;
+    
+}
+
+.logo {
+    margin-left: 10px;
+    margin-top: 5px;
+    
+}
+
+.logo a {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Gotham Light';
+    letter-spacing: 1.1px;
+    transition: 0.4s;
+    padding: 0 10px;
+    
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #c2cad1;
+}
+
+#check{
+    display: none;
+}
+
+section[id]{
+    scroll-margin-top: 70px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*banner*/
+
+#banner{
+    padding: 0 50px;
+    background: url(img/portada3-01.png) no-repeat center;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.contenido-banner{
+    font-size: 20px;
+    line-height: 25px; /*separacion entre lineas de texto*/
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    font-family: 'Montserrat Regular';
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.contenido-banner h2{   /*titulo banner*/   
+    color: rgb(253, 253, 253);
+    font-family: 'Gotham Regular';
+    line-height: 70px; 
+    font-size: 40px;
+
+}
+
+
+.boton-leermas{
+    margin-top: 30px;
+    padding: 6px 20px;
+    border: 2px solid #fff;
+    color:#fff;
+    text-decoration: none;
+    background: none;
+    border-radius: 25px;
+    font-size: 15px;
+    align-self: baseline;
+    transition: all 0.45s;
+    
+}
+
+.boton-leermas:hover{
+    background: #ffffff2a;
+}
+
+
+/*productos*/
+
+
+.contenido-productos{
+   background: #fff;
+   justify-content: center;
+   padding: 50px 50px;
+   text-align: center;
+}
+
+.contenido-productos h4{
+    font-size: 40px;
+}
+
+.contenido-productos p1{
+    font-size: 20px;
+    font-family: 'Montserrat Regular';
+}
+
+#productos{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 0mm;
+}
+
+#productos div{
+    padding: 30px 30px;
+}
+
+#productos h4{
+    font-family: 'Montserrat Light';
+    letter-spacing: 0.5px;
+    font-size: 25px;
+    line-height: 25px;
+    color:black;
+}
+.box{
+    width: 180px;
+    height: 220px;
+    background-color: #b6b6b673;
+    border: 2px #c2cad1;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+#productos div h3{
+    font-family: 'Montserrat';
+    letter-spacing: 0.5px;
+    font-size: 25px;
+    line-height: 25px;
+    color:#194E84
+}
+
+#productos div p1{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.boton-consultar{
+    display: inline-block;
+    text-decoration: none;
+    color:#ffffff;
+    background-color: #194E84;
+    margin-top: 15px;
+    padding: 6px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+/*formulario de contacto*/
+#contacto{
+    background-color: #194E84;
+    padding: 50px 50px; 
+    color: #fff;
+
+}
+
+#contacto h5{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+#contacto h6{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos-form div{
+    padding: 10px;
+    flex:1;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea{
+    background-color: #194E84;
+    border-radius: 20px;
+    padding: 10px 5px;
+    color: #fff;
+    width: 100%;  
+    border: 2px solid #fff;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: #194E84;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boton-formulario{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.616);
+    border-radius: 20px;
+    font-size: 15px;
+    align-self: baseline;
+    transition: all 0.45s;
+    text-align: center;  
+}
+
+.boton-form{
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+
+/*footer*/
+footer{
+    background: #c2cad1;
+    color:#194E84;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/*responsive*/
+@media(max-width: 768px){
+    /*Header*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #194E84;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a{
+        display:block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute ;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    } 
+    /*productos*/
+     #productos{
+     flex-direction: column;
+    }
+
+}
+
+
